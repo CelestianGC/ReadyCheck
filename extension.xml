@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root version="3.0" >
+
+	<properties>
+		<name>CoreRPG - ReadyCheck</name>
+		<version>1.0</version>
+		<loadorder>99</loadorder>
+		<description>
+			<text>ReadyCheck, Added /readycheck command for host to find out who is ready to game.</text>
+			<website></website>
+			<author>Celestian</author>
+		</description>
+	</properties>
+
+    <announcement text="ReadyCheck - Extension v1.0\rCoreRPG/5E version for Fantasy Grounds\r--by Celestian 2018.02.28" font="emotefont" />
+	<base>		
+    <!-- readycheck -->
+    <string name="readycheck_window_title">Ready Check</string>    
+    <string name="readycheck_button_label">I AM READY!</string>    
+    <string name="readycheck_button_label_tooltip">The DM has asked if you are ready, are you?</string>    
+    
+    <script name="LibraryDataReadyCheck" file="scripts/data_library_readycheck.lua" />
+    <script name="ConnectionManagerADND" file="scripts/manager_connection_adnd.lua" />
+
+    <includefile source="utility/utility_readycheck.xml" />
+  </base>
+    
+</root>
