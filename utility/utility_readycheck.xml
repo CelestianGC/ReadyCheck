@@ -48,7 +48,6 @@
 			<subwindow_record name="main">
         <script>
           function readyPressed(sUser,nCheck)
-            Debug.console("utility_readycheck.xml","main","TESTING");
             window.readyPressed(sUser,nCheck);
           end
         </script>
@@ -100,12 +99,6 @@
       
       <!-- User visible -->
       <subwindow name="main_user">
-        <script>
-          function readyPressed(sUser,nCheck)
-            Debug.console("utility_readycheck.xml","main_user","TESTING");
-            window.parentcontrol.readyPressed(sUser,nCheck);
-          end
-        </script>
         <anchored>
           <top parent="columnanchor" anchor="bottom" relation="relative" offset="20" />
           <left />

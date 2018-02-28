@@ -4,7 +4,7 @@
 
 	<properties>
 		<name>CoreRPG - ReadyCheck</name>
-		<version>1.0</version>
+		<version>1.1</version>
 		<loadorder>99</loadorder>
 		<description>
 			<text>ReadyCheck, Added /readycheck command for host to find out who is ready to game.</text>
