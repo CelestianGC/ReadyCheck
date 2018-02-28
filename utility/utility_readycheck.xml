@@ -7,9 +7,9 @@
 
 <root>
   <windowclass name="readycheck" >
-    <frame>charsheethelper</frame>
+    <frame>utilitybox</frame>
     <placement>
-      <size width="200" height="300" />
+      <size width="300" height="300" />
     </placement>
     <sizelimits>
       <minimum width="200" height="200" />
@@ -195,5 +195,34 @@
       <noscroll />
     </windowlist>
   </template>
+  
+	<template name="anchor_title_charsheet">
+		<genericcontrol>
+			<anchored height="0">
+				<top offset="35" />
+				<left parent="" anchor="left" offset="15" />
+				<right parent="" anchor="right" offset="-30" />
+			</anchored>
+			<disabled />
+		</genericcontrol>
+	</template>
+  
+	<template name="close_charsheethelper">
+		<close>
+			<anchored>
+				<top offset="24" />
+				<right offset="-12" />
+			</anchored>
+		</close>
+	</template>
 
-</root>
+	<template name="resize_charsheethelper">
+		<resize>
+			<anchored>
+				<right offset="-12" />
+				<bottom offset="-14" />
+			</anchored>
+		</resize>
+	</template>
+
+  </root>
