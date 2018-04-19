@@ -4,7 +4,7 @@
 
 	<properties>
 		<name>CoreRPG - ReadyCheck</name>
-		<version>1.1</version>
+		<version>1.2</version>
 		<loadorder>99</loadorder>
 		<description>
 			<text>ReadyCheck, Added /readycheck command for host to find out who is ready to game.</text>
@@ -13,7 +13,7 @@
 		</description>
 	</properties>
 
-    <announcement text="ReadyCheck - Extension v1.0\rCoreRPG/5E version for Fantasy Grounds\r--by Celestian 2018.02.28" font="emotefont" />
+    <announcement text="ReadyCheck - Extension v1.2\rCoreRPG/5E version for Fantasy Grounds\r--by Celestian 2018.02.28" font="emotefont" />
 	<base>		
     <!-- readycheck -->
     <string name="readycheck_window_title">Ready Check</string>    
@@ -23,6 +23,9 @@
     <script name="LibraryDataReadyCheck" file="scripts/data_library_readycheck.lua" />
     <script name="ConnectionManagerADND" file="scripts/manager_connection_adnd.lua" />
 
+    <icon name="chat_success" file="graphics/icons/check_success.png" />
+    <icon name="chat_fail" file="graphics/icons/check_fail.png" />
+    
     <includefile source="utility/utility_readycheck.xml" />
   </base>
     
