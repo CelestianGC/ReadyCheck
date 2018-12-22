@@ -114,28 +114,33 @@
 		<margins control="0,0,0,5" />
     <script file="utility/scripts/readycheck_host.lua" />
     <sheetdata>
-			<anchor_column name="columnanchor" />
-
+      <portrait_readycheck name="readycheck_portrait">
+        <anchored width="75" height="75" >
+          <top position="bottom" relation="relative" />
+          <left anchor="center" offset="-35" />
+        </anchored>
+      </portrait_readycheck>
+      
 			<label name="name_label">
-        <anchored>
-          <top position="bottom" relation="relative"/>
-          <left anchor="center" offset="-20"/>
+        <anchored to="readycheck_portrait">
+          <top anchor="bottom" />
+          <left position="left" />
           <right />
         </anchored>
         <font>reference-b-large</font>
 			</label>
  
-		<buttoncontrol name="ready_check_select">
-				<anchored to="name_label" position="left" offset="2,0" width="50"/>
-				<tooltip text="ARE THEY READY???" />
-			<state icon="chat_fail" pressed="chat_fail" />
-		</buttoncontrol>
-		<buttoncontrol name="ready_check_select_ready">
-				<anchored to="name_label" position="left" offset="2,0" width="50"/>
-				<tooltip text="THEY ARE READY???" />
-			<state icon="chat_success" pressed="chat_success" />
-      <invisible />
-		</buttoncontrol>
+      <buttoncontrol name="ready_check_select">
+        <anchored to="readycheck_portrait" position="left" offset="2,0" width="50"/>
+        <tooltip text="ARE THEY READY???" />
+        <state icon="chat_fail" pressed="chat_fail" />
+      </buttoncontrol>
+      <buttoncontrol name="ready_check_select_ready">
+        <anchored to="readycheck_portrait" position="left" offset="2,0" width="50"/>
+        <tooltip text="THEY ARE READY???" />
+        <state icon="chat_success" pressed="chat_success" />
+        <invisible />
+      </buttoncontrol>
       
     </sheetdata>
   </windowclass>
@@ -225,4 +230,10 @@
 		</resize>
 	</template>
 
+  <template name="portrait_readycheck">
+    <genericcontrol>
+      <disabled />
+    </genericcontrol>
+  </template>
+  
   </root>
